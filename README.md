@@ -15,3 +15,14 @@ A Cheatsheet:
 
 https://www.qubole.com/resources/pyspark-cheatsheet/
 
+Please note you need to do this:
+
+```
+from pyspark import SparkContext
+from pyspark import SQLContext
+
+sc = SparkContext()
+sqlContext = SQLContext(sc)
+```
+
+Found here: https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/
