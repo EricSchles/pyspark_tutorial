@@ -26,3 +26,10 @@ sqlContext = SQLContext(sc)
 ```
 
 Found here: https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations/
+
+How to get the last row in pyspark:
+
+```
+expr = [last(col) for col in df.columns]
+df.groupBy().agg(*expr).show()
+```
